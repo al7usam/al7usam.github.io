@@ -1,0 +1,20 @@
+<html>
+	<script>
+			function Doo(){
+				//alert('Hello');
+				const m = (new URL(document.location)).searchParams;
+				const sname= m.get('sender');
+				const smsg= m.get('MSG');
+				
+				document.getElementById('pname').innerHTML = sname;
+				document.getElementById('pmsg').innerHTML = smsg;
+				
+				//alert(sname);
+			}
+	</script>
+	<body onLoad="Doo()">
+		Thank you <span id="pname"></span>
+		<br>
+		we got your message: <span id="pmsg"></span>
+	</body>
+</html>

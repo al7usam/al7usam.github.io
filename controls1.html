@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<script>
+			function clicked1(){
+				var v1 = confirm("Do you love in Amman?");
+
+				if(v1 == false){
+					alert("You are Qualified");
+				}
+				else{
+					alert("You are not Qualified");
+				}
+			}
+
+			function clicked2(){
+				var name = prompt("Please Enter your Name:");
+
+				if(name == null || name == ""){
+					alert("No Name Entered");
+				}
+				else{
+					alert("Hello " + name);
+				}
+			}
+		</script>
+		<input type="Button" Value="Funding" onClick="clicked1()">
+		<input type="Button" Value="Test" onClick="clicked2()">
+	</body>
+</html>
